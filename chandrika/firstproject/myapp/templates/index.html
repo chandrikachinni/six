@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Page</title>
+</head>
+<body>
+  <h1>login Form</h1>
+  <form method="post">
+    {% csrf_token %}
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="password">password:</label>
+    <textarea id="password" name="password" required></textarea><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+  <br>
+  <a href = 'data' class = "button-link">
+      <button type="button">Get Data</button>
+  </a>
+</a>
+</body>
+</html>
+
+ -->
+<!-- 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Rigester Form</title>
+     <style>
+         body {
+             font-family: Arial, sans-serif;
+             margin: auto;
+             padding: auto;
+             box-sizing: border-box;
+             text-align: center;
+             padding: 20px;
+         }
+ 
+         form {
+             max-width: 400px;
+             margin: auto;
+         }
+ 
+         label {
+             display: block;
+             margin-bottom: 8px;
+         }
+ 
+         input,
+         textarea {
+             width: 100%;
+             padding: 8px;
+             margin-bottom: 16px;
+             box-sizing: border-box;
+         }
+ 
+         button{
+             background-color: #4caf50;
+             color: white;
+             padding: 10px 15px;
+             border: none;
+             border-radius: 4px ;
+             cursor: pointer;
+ 
+         }
+         button:hover{
+             background-color: #4caf49;
+         }
+ 
+     </style>
+ </head>
+ <body>
+ 
+     <h1 style=" color: rgb(135, 137, 235);">Employee Rigestration form</h1>
+ 
+     <form method="POST">
+         {% csrf_token %}
+ 
+         <label for="name">Name:</label>
+         <input type="text" id="name" name="name" required>
+ 
+         
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email" required>
+ 
+      
+         <label for="password">Password:</label>
+         <input type="password" id="password" name="password" required>
+ 
+ 
+         <button type="submit">submit</button>
+     </form>
+     <br>
+     <a href="getdata" class="button-link">
+         <button type="button">get data</button>
+     </a>
+ 
+ </body>
+ </html>  
+ 
